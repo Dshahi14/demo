@@ -27,5 +27,6 @@ pipeline {
                 echo 'Mointering....'
             }
           }
+        sh sleep 60s
        }
      }
