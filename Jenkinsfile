@@ -25,7 +25,7 @@ pipeline {
         stage('Mointer') {
             steps {
                 echo 'Mointering....'
-                sh sleep 60s
+                 Sleep 60s
             }
           }
        }
