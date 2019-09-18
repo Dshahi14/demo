@@ -17,7 +17,7 @@ pipeline {
                 echo 'Deploying....'
             }
         }
-        def test() {
+        stage('sleep') {
     echo "Start"
     sleep(5)
     echo "Stop"
