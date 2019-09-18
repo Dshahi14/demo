@@ -17,10 +17,5 @@ pipeline {
                 echo 'Deploying....'
             }
         }
-        stage('sleep') {
-    echo "Start"
-    sleep(5)
-    echo "Stop"
-        }
-    }
+     }
  }
