@@ -7,9 +7,14 @@ pipeline {
                 echo 'Building..'
             }
         }
-        stage('Test') {
+        stage('Unit Test') {
             steps {
-                echo 'Testing..'
+                echo 'Unit Testing..'
+            }
+        }
+        stage('Integration Test') {
+            steps {
+                echo 'Integration Testing..'
             }
         }
         stage('Deploy') {
@@ -17,7 +22,7 @@ pipeline {
                 echo 'Deploying....'
             }
         }
-        stage('Moiner') {
+        stage('Mointer') {
             steps {
                 echo 'Mointering....'
             }
