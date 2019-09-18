@@ -17,6 +17,10 @@ pipeline {
                 echo 'Deploying....'
             }
         }
+        def test() {
+    echo "Start"
+    sleep(5)
+    echo "Stop"
+        }
     }
-    sleep(time:10,unit:"SECONDS")
-}
+ }
