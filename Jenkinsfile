@@ -27,5 +27,10 @@ pipeline {
                 echo 'Mointering....'
              }
           }
+        stage('sleep') {
+            steps {
+                sleep 30
+             }
+          }
        }
      }
