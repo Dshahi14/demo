@@ -7,6 +7,11 @@ pipeline {
                 echo 'Building..'
             }
         }
+        stage('sleep') {
+            steps {
+                sleep 90
+             }
+          }
         stage('Unit Test') {
             steps {
                 echo 'Unit Testing..'
@@ -22,15 +27,10 @@ pipeline {
                 echo 'Deploying....'
             }
         }
-        stage('Mointer') {
+        stage('Moniter') {
             steps {
-                echo 'Mointering....'
+                echo 'Monitering....'
              }
           }
-        stage('sleep') {
-            steps {
-                sleep 90
-             }
-          }
-       }
+        }
      }
